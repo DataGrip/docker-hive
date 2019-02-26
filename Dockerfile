@@ -46,6 +46,9 @@ RUN chmod +x /usr/local/bin/startup.sh
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
+COPY init.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/init.sh
+
 EXPOSE 10000
 EXPOSE 10002
 
